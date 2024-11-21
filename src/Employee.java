@@ -1,5 +1,5 @@
 public class Employee {
-    private int id;
+    private String id;
     private String name;
     private String last_name;
     private String mail;
@@ -7,7 +7,7 @@ public class Employee {
     private String address;
     private double salary;
 
-    public Employee(int id, String name, String last_name, String mail, String phone, String address, double salary) {
+    public Employee(String id, String name, String last_name, String mail, String phone, String address, double salary) {
         this.id = id;
         this.name = name;
         this.last_name = last_name;
