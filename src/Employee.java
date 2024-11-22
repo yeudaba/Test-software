@@ -1,3 +1,7 @@
+
+
+
+// אובייקט של עובד עם פרטים אישיים
 public class Employee {
     private String id;
     private String name;
@@ -22,7 +26,7 @@ public class Employee {
     }
 
     public String toString(){
-        return String.format("Employee[id=%d, name=%s, %s, salary=%.2f]", id, name, last_name, salary);
+        return "ID:"+ id + ", "+"Name: "+ name+", "+"Last Name:"+last_name+", "+"Mail:"+mail+", "+"Phone:"+phone+", "+"Address:"+address+", "+"Salary:"+salary;
     }
 
 }
