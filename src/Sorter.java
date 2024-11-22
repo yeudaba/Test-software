@@ -18,7 +18,6 @@ public class Sorter {
         }
 
         long endTime = System.nanoTime();
-        System.out.println("Bubble sort completed in: " + (endTime - startTime) + " ns");
         return employees;
     }
     */
@@ -49,7 +48,6 @@ public class Sorter {
         merge(employees, left, right);
 
         long endTime = System.nanoTime();
-        System.out.println("Merge sort completed in: " + (endTime - startTime) + " ns");
         return employees;
     }
 
