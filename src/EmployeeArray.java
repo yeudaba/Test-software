@@ -1,5 +1,7 @@
 import java.util.Random;
 
+
+// אובייקט של מערך של עובדים
 public class EmployeeArray {
     private static Employee [] employees;
     private static int size;
@@ -9,7 +11,7 @@ public class EmployeeArray {
         size=0;
         generateEmployees(capacity);
     }
-
+    // פונקציה שהמטרה שלה היא ליצור באופן רנדומלי 1000 עובדים עם פרטים אישיים במערך
     public static Employee[] generateEmployees(int count) {
         Random random = new Random();
         Employee[] employees = new Employee[count];
