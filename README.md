@@ -1,4 +1,4 @@
-Yeuda Baza
+Yeuda Baza and
 Almog Ben Gur
 
 Software Engineering Tests:
