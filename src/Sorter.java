@@ -37,8 +37,15 @@ public class Sorter {
         Employee[] left = new Employee[mid];
         Employee[] right = new Employee[employees.length - mid];
 
-        System.arraycopy(employees, 0, left, 0, mid);
-        System.arraycopy(employees, mid, right, 0, employees.length - mid);
+        // העתקה ידנית של אלמנטים למערך left
+        for (int i = 0; i < mid; i++) {
+            left[i] = employees[i];
+        }
+
+        // העתקה ידנית של אלמנטים למערך right
+        for (int i = mid; i < employees.length; i++) {
+            right[i - mid] = employees[i];
+        }
 
         // Recursively sort both halves
         mergeSort(left);
