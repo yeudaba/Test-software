@@ -69,7 +69,6 @@ public class Sorter {
                 employees[k++] = right[j++];
             }
         }
-
         // Copy remaining elements from left array
         while (i < left.length) {
             employees[k++] = left[i++];
