@@ -5,7 +5,7 @@ import TDD.*;
 public class SorterTest {
     @Test
     public void testMergeSort() {
-        Employee[] employees = EmployeeArray.generateEmployees(100);// יצירת מערך של 100 עובדים
+        Employee[] employees = EmployeeArray.generateEmployees(1000);// יצירת מערך של 1000 עובדים
         Employee[] sortedEmployees = Sorter.mergeSort(employees);// פה אני מבצע מיון למערך
 
         // Check if sorted
@@ -20,7 +20,7 @@ public class SorterTest {
 
     @Test
     public void testNonEmptyArray() {
-        Employee[] employees = EmployeeArray.generateEmployees(100);// יצירת מערך של 100 עובדים
+        Employee[] employees = EmployeeArray.generateEmployees(1000);// יצירת מערך של 100 עובדים
         Employee[] sortedEmployees = Sorter.mergeSort(employees);// פה אני מבצע מיון למערך
         assertNotNull(sortedEmployees, "Sorted array should not be null");// בדיקה זו מוודאת שהמערך המוחזר sortedEmployees אינו null.
         for (int i = 0; i < employees.length; i++) {
