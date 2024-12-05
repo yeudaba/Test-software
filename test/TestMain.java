@@ -3,13 +3,13 @@ import org.junit.jupiter.api.Test;
 
 public class TestMain {
     @Test
-
     //מסלול 1
     public void testArray_and_Size0() {
         // בדיקה למערך ריק
         int[] arr0 = new int[0]; // מערך ריק
         int size0 = 0; // גודל המערך הוא 0
-        assertEquals(1, TDD.WhiteBox.sumPositive(arr0, size0), "הפונקציה צריכה להחזיר 0 כאשר המערך ריק");
+        assertEquals(0, TDD.WhiteBox.sumPositive(arr0, size0), "הפונקציה צריכה להחזיר 0 כאשר המערך ריק");
+        System.out.println("Test 1 pass");
     }
     // מסלול 2
     @Test
@@ -20,6 +20,7 @@ public class TestMain {
             arr1[i] = i;
         }
         assertEquals(10,TDD.WhiteBox.sumPositive(arr1, size1));
+        System.out.println("Test 2 pass");
     }
     // מסלול 3 וגם מסלול4
     @Test
@@ -30,6 +31,7 @@ public class TestMain {
             arr2[i] = -i;
         }
         assertEquals(0,TDD.WhiteBox.sumPositive(arr2, size2));
+        System.out.println("Test 3 pass");
     }
     @Test
     public void testArray_and_Size3() {
@@ -43,5 +45,17 @@ public class TestMain {
                 arr3[i]=-i;
         }
         assertEquals(6,TDD.WhiteBox.sumPositive(arr3,size3));
+        System.out.println("Test 4 pass");
+    }
+
+    public void main(String[] args) {
+        System.out.println("Test 1: ");
+        testArray_and_Size0();
+        System.out.println("Test 2: ");
+        testArray_and_Size1();
+        System.out.println("Test 3: ");
+        testArray_and_Size2();
+        System.out.println("Test 4: ");
+        testArray_and_Size3();
     }
 }
